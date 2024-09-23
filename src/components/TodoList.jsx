@@ -18,12 +18,12 @@ const TodoList = ({ todos, toggleComplete, removeTodo }) => {
 
 TodoList.propTypes = {
     todos: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired, // El ID debe ser un número
-    task: PropTypes.string.isRequired, // La tarea es una cadena
-    completed: PropTypes.bool.isRequired, // El estado de completado es booleano
+    id: PropTypes.number.isRequired, // The ID must be a number
+    task: PropTypes.string.isRequired, // The task is a chain
+    completed: PropTypes.bool.isRequired, // Completed status is boolean
     })).isRequired,
-  toggleComplete: PropTypes.func.isRequired, // toggleComplete debe ser una función
-  removeTodo: PropTypes.func.isRequired, // removeTodo debe ser una función
+  toggleComplete: PropTypes.func.isRequired, // toggleComplete must be a function
+  removeTodo: PropTypes.func.isRequired, // removeEverything must be a function
 };
 
 export default TodoList;
