@@ -16,15 +16,15 @@ const TodoItem = ({ todo, toggleComplete, removeTodo }) => {
     );
 };
 
-// Definir los tipos de las props que espera el componente
+// Define the types of props that the component expects
 TodoItem.propTypes = {
     todo: PropTypes.shape({
-    id: PropTypes.number.isRequired, // Asegúrate de que el ID sea un número
-    task: PropTypes.string.isRequired, // La tarea debe ser una cadena de texto
-    completed: PropTypes.bool.isRequired, // Completado debe ser un booleano
+    id: PropTypes.number.isRequired, // Make sure the ID is a number
+    task: PropTypes.string.isRequired, // The task must be a text string
+    completed: PropTypes.bool.isRequired, // Completed must be a boolean
     }).isRequired,
-  toggleComplete: PropTypes.func.isRequired, // Función para marcar como completado
-  removeTodo: PropTypes.func.isRequired, // Función para eliminar la tarea
+  toggleComplete: PropTypes.func.isRequired, // Mark as completed function
+  removeTodo: PropTypes.func.isRequired, // Task delete function
 };
 
 export default TodoItem;
