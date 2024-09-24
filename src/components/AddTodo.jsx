@@ -26,7 +26,7 @@ const AddTodo = ({ addTodo }) => {
 };
 
 AddTodo.propTypes = {
-  addTodo: PropTypes.func.isRequired, // addTodo debe ser una función
+  addTodo: PropTypes.func.isRequired, // addTodo most be a function
 };
 
 export default AddTodo;

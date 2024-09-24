@@ -9,7 +9,7 @@ const Header = ({ title }) => {
 };
 
 Header.propTypes = {
-  title: PropTypes.string.isRequired, // El título debe ser una cadena
+  title: PropTypes.string.isRequired, // Title most be a string
 };
 
 export default Header;
