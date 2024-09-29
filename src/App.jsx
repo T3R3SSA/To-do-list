@@ -6,7 +6,6 @@ const App = () => {
   return (
     <Router>
       <div id="app-container">
-        {/* Menú lateral */}
         <nav id="side-menu">
           <ul>
             <li><a href="/">Home</a></li>
@@ -15,7 +14,6 @@ const App = () => {
           </ul>
         </nav>
 
-        {/* Contenido principal */}
         <div id="main-content">
           {/*<Header title="My To-Do List" />*/}
           <RoutesConfig />
