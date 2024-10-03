@@ -1,3 +1,5 @@
+require('dotenv').config();
+const config = require('./config.js');
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
@@ -7,8 +9,8 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 // Conexión a MongoDB
-const uri = 'mongodb://localhost:27017/to-do-list'; // URI de conexión a tu base de datos
-mongoose.connect(uri) // Eliminar las opciones obsoletas
+const uri = config.MONGODB_URI; // URI de conexión a tu base de datos
+mongoose.connect(uri) 
     .then(() => console.log('MongoDB conectado'))
     .catch(err => console.log('Error de conexión a MongoDB:', err));
 
